@@ -1,0 +1,169 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --title-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --bcg-secondary-color: #2f303a;
+  --bcg-primary-color: #f5f4fa;
+}
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: var(--title-color);
+  color: var(--primary-text-color);
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+address {
+  font-style: normal;
+}
+img {
+  min-width: 100%;
+  display: block;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+header {
+  background-color: var(--title-color);
+}
+.logo {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+/* основной цвет #212121 */
+/* вторичный цвет #757575 */
+/*  голубой акцент #2196F3 */
+/* белый цвет #FFFFFF */
+/* фон темный #2F303A */
+/* фон серый #F5F4FA */
+/* фон белый #E5E5E5 */
+/* текст футер rgba(255,255,255,0.6) */
+
+/* SITE_NAV */
+.site-nav a,/*.link,*/
+.contacts-nav a/*.link*/ {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-nav .link {
+  color: var(--primary-text-color);
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contacts-nav {
+  display: flex;
+  align-items: center;
+}
+.contacts-nav .item + .item {
+  margin-left: 50px;
+}
+.contacts-nav.list > .item {
+  margin-bottom: 0;
+}
+/* FOOTER */
+.logo.inverse {
+  display: inline-block;
+  color: var(--title-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  margin-bottom: 20px;
+}
+.footer {
+  background-color: var(--bcg-secondary-color);
+  padding: 60px;
+}
+.footer .link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
+.footer a[href="https://goo.gl/maps/KZqqGX3hnb8J8rTS9"]
+{
+  color: var(--title-color);
+}
+address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
